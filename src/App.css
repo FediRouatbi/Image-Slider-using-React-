@@ -1,0 +1,74 @@
+.container {
+  width: 1000px;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+img {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.8s ease-in-out;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 50%;
+  font-weight: 900;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #22b8cf;
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.4);
+  color: #c5f6fa;
+  transition: all 0.5s ease;
+}
+.btn-right {
+  right: 30px;
+}
+.btn-left {
+  left: 30px;
+}
+.btn-right:hover,
+.btn-left:hover {
+  top: 49%;
+}
+.btn-right:active,
+.btn-left:active {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  top: 50%;
+}
+.dots {
+  position: absolute;
+  display: flex;
+  transform: translateX(-50%);
+  gap: 1rem;
+  bottom: 25%;
+  left: 50%;
+  color: #c5f6fa;
+}
+.dot {
+  background-color: #d7c4b1;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: background-color 0.5s ease;
+}
+.dot.dot_active {
+  background-color: #e67700;
+}
