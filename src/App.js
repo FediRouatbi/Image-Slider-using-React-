@@ -11,6 +11,7 @@ export default function App() {
       <img
         style={{ transform: `translate(${130 * (i - current) - 50}%,-50%)` }}
         src={require(`./image${i + 1}.jpg`)}
+        alt={"slider"}
       />
     ));
   const dot = new Array(6)
